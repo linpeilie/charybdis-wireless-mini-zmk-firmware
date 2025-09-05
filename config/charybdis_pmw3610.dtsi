@@ -41,14 +41,25 @@
     cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
+        status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
-        spi-max-frequency = <2000000>;     // PMW3610 上限 2MHz
-        motion-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
-        // 可接 reset 脚更稳：reset-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
-        res-cpi = <1200>;                   // 先用 1200
-        smart-mode;                         // 开启智能模式
-        // 先不加 force-awake，确认基线后再评估功耗/响应
+        spi-max-frequency = <2000000>;
+        irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        cpi = <800>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+
+        force-awake;
+        /* keep the sensor awake while ZMK activity state is ACTIVE,
+           fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
+           thus, the sensor would be a `wakeup-source` */
+
+        force-awake-4ms-mode;
+        /* while force-awake is acitvated, enable this mode to force sampling per 
+           4ms, where the default sampling rate is 8ms. */
+        /* NOTE: apply this mode if you need 250Hz with direct USB connection. */
     };
 };
 
