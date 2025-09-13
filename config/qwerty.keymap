@@ -24,7 +24,8 @@
             quick-tap-ms = <150>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
             require-prior-idle-ms = <185>; // like quick-tap-ms however it will apply for any non-modifier key pressed before it
             bindings = <&kp>, <&kp>;
-  // hold, tap
+
+            // hold, tap
         };
 
         // Left-hand HRM
@@ -62,7 +63,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings = <&lt 7 ESC>, <&mo 6>;
- // hold, tap, double_tap
+
+            // hold, tap, double_tap
         };
 
         td_space_nav: td_space {
@@ -70,7 +72,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <120>;
             bindings = <&lt 2 SPACE>, <&kp SPACE>;
- // hold, tap, double_tap
+
+            // hold, tap, double_tap
         };
 
         mo_clk: mo_click {
@@ -87,7 +90,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <170>;
             bindings = <&mo_clk 3 LCLK>, <&mkp LCLK>;
- // hold, tap, double_tap
+
+            // hold, tap, double_tap
         };
 
         mo_kp: mo_kp {
@@ -104,7 +108,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <170>;
             bindings = <&mo_kp 1 BACKSPACE>, <&kp BACKSPACE>;
- // hold, tap, double_tap
+
+            // hold, tap, double_tap
         };
 
         httl: ht_two_layers {
@@ -120,7 +125,8 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&to 0>, <&to 4>;
- // tap, double_tap
+
+            // tap, double_tap
         };
 
         td_clk_scrl: td_click_or_scroll {
@@ -128,7 +134,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&mkp RCLK>, <&mo 8>;
-  // tap/hold, double_tap
+
+            // tap/hold, double_tap
         };
 
         td_bore: BASE_or_EXTRA {
@@ -178,7 +185,7 @@
 
         combo_left_click {
             bindings = <&mkp LCLK>;
-            key-positions = <25 26>;
+            key-positions = <26 25>;
         };
 
         combo_middle_click {
@@ -428,8 +435,8 @@
 
         BASE {
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E              &kp R    &kp T     &kp Y      &kp U          &kp I      &kp O    &kp P      &kp GRAVE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D              &kp F    &kp G     &kp H      &kp J          &kp K      &kp L    &kp SEMI   &kp DEL
+&kp ESC           &kp Q  &kp W  &kp E              &kp R    &kp T     &kp Y      &kp U          &kp I      &kp O    &kp P      &kp DELETE
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D              &kp F    &kp G     &kp H      &kp J          &kp K      &kp L    &kp SEMI   &kp SQT
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C              &kp V    &kp B     &kp N      &kp M          &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_ALT
                                 &td_esc_scrl_slow  &td_clk  &td_bs    &kp ENTER  &td_space_nav
             >;
