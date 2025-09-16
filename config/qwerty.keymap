@@ -62,7 +62,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
-            bindings = <&lt 7 ESC>, <&mo 6>;
+            bindings = <&lt 7 ESC>, <&mo 1>;
 
             // hold, tap, double_tap
         };
