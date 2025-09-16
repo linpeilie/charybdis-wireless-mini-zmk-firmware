@@ -107,7 +107,8 @@
             // 移除 hold-trigger-key-positions（避免误判）
 
             bindings = <&mo 2>, <&mkp LCLK>;
-  // 长按切换到层 3，短按发送左箭头
+
+            // 长按切换到层 3，短按发送左箭头
         };
 
         ht_left_mo_kp: ht_left_mo_kp {
@@ -459,7 +460,7 @@
 
         BASE {
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E                 &kp R                      &kp T                         &kp Y      &kp U      &kp I      &kp O    &kp P      &kp GRAVE
+&kp TAB           &kp Q  &kp W  &kp E                 &kp R                      &kp T                         &kp Y      &kp U      &kp I      &kp O    &kp P      &kp GRAVE
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D                 &kp F                      &kp G                         &kp H      &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C                 &kp V                      &kp B                         &kp N      &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_ALT
                                 &ht_left_mo_kp 1 ESC  &ht_left_click_nav 2 LCLK  &ht_left_mo_kp 3 BACKSPACE    &kp ENTER  &kp SPACE
