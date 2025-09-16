@@ -472,7 +472,7 @@
 &trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6        &kp F7              &kp F8              &kp F9              &kp F10               &kp F11
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7        &kp NUMBER_8        &kp NUMBER_9        &kp NUMBER_0          &kp F12
 &trans  &none         &none         &none         &none         &none           &kp EQUAL     &ht_num_func F1 N1  &ht_num_func F2 N2  &ht_num_func F3 N3  &ht_num_func F12 DOT  &trans
-                                    &none         &none         &trans          &kp N0        &kp SPACE
+                                    &none         &none         &trans          &kp ENTER     &kp SPACE
             >;
         };
 
@@ -494,7 +494,7 @@
             >;
         };
 
-        GAME {
+        GAME_Deprecated {
             bindings = <
 &kp N1  &kp TAB    &kp Q  &kp W  &kp E      &kp R           &none  &none  &none  &none  &none  &trans
 &kp N2  &kp LCTRL  &kp A  &kp S  &kp D      &kp F           &none  &none  &none  &none  &none  &none
