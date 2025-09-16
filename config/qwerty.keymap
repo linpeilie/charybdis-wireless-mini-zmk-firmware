@@ -103,7 +103,7 @@
             tapping-term-ms = <170>;    // 长按判定时间 170ms（可调整）
             // 移除 hold-trigger-on-release（长按立即触发）
             // 移除 hold-trigger-key-positions（避免误判）
-            bindings = <&mo 2>, <&kp LEFT>;  // 长按切换到层 3，短按发送左箭头
+            bindings = <&mo 2>, <&mkp LCLK>;  // 长按切换到层 3，短按发送左箭头
         };
 
         ht_left_mo_kp: ht_left_mo_kp {
