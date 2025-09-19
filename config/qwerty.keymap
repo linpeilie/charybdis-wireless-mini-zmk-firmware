@@ -275,10 +275,10 @@
 
         SYM {
             bindings = <
-&none  &none  &none     &kp CARET  &kp TILDE      &none        &kp PLUS      &kp AMPS   &kp LBKT  &kp RBKT  &kp PRCNT  &kp BSLH
-&none  &none  &kp LPAR  &kp RPAR   &kp BACKSPACE  &kp UNDER    &kp KP_MINUS  &kp GRAVE  &kp LBRC  &kp RBRC  &kp ASTRK  &kp PIPE
-&none  &none  &none     &kp HASH   &home_dir      &kp DLLR     &kp EQUAL     &code_blk  &kp LT    &kp GT    &kp AT     &kp KP_SLASH
-                        &none      &trans         &trans       &trans        &trans
+&studio_unlock  &none  &none  &none  &none   &none     &none   &none       &none             &none       &none  &none
+&none           &none  &none  &none  &none   &none     &none   &kp C_PREV  &kp K_PLAY_PAUSE  &kp C_NEXT  &none  &none
+&kp K_LOCK      &none  &none  &none  &none   &none     &none   &none       &none             &none       &none  &none
+                              &none  &trans  &trans    &trans  &trans
             >;
         };
 
