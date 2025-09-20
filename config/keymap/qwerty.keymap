@@ -20,7 +20,7 @@
             // 移除 hold-trigger-on-release（长按立即触发）
             // 移除 hold-trigger-key-positions（避免误判）
 
-            bindings = <&mo 2 &mkp LCLK>;
+            bindings = <&mo 2>, <&mkp LCLK>;
 
             // 长按切换到层 3，短按发送左箭头
         };
