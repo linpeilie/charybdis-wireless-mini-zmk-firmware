@@ -37,9 +37,9 @@ layers:
   - .
   - /
   - RIGHT ALT
-  - {t: BACKSPACE ESC, h: '&mo 3 1'}
-  - {t: '&mkp LCLK LCLK', h: '&mo 2 2'}
-  - {t: BACKSPACE BACKSPACE, h: '&mo 3 3'}
+  - {t: ESC, h: NUM}
+  - {t: L CLK, h: NAV}
+  - {t: BACK SPACE, h: SYM}
   - ENTER
   - SPACE
   NUM:
@@ -79,7 +79,7 @@ layers:
   - '>'
   - ''
   - {t: ▽, type: trans}
-  - ''
+  - {type: held}
   - ''
   - {t: ▽, type: trans}
   - ENTER
@@ -122,7 +122,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -165,7 +165,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   GAME_Deprecated:
