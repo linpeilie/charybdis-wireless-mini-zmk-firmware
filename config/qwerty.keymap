@@ -52,26 +52,6 @@
             hold-trigger-on-release;
         };
 
-        // 短按 ESC 键，长按激活 NUM 层
-
-        td_esc_scrl_slow: td_esc_scrl_slow {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&lt 7 ESC>, <&mo 1>;
-
-            // hold, tap, double_tap
-        };
-
-        td_space_nav: td_space {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <120>;
-            bindings = <&lt 2 SPACE>, <&kp SPACE>;
-
-            // hold, tap, double_tap
-        };
-
         mo_clk: mo_click {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
