@@ -10,56 +10,8 @@
 
 / {
     behaviors {
-        // Left-hand HRM
-
-        ht_left: left_side_homerow_mod {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <KEYS_R THUMBS>;
-            hold-trigger-on-release;
-        };
-
-        // Right-hand HRM
-
-        ht_right: right_side_homerow_mod {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <125>;
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <KEYS_L THUMBS>;
-            hold-trigger-on-release;
-        };
-
-        mo_clk: mo_click {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <40>;
-            hold-while-undecided;
-            bindings = <&mo>, <&mkp>;
-        };
-
-        td_clk: td_clk {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <170>;
-            bindings = <&mo_clk 3 LCLK>, <&mkp LCLK>;
-
-            // hold, tap, double_tap
-        };
 
         // 两个参数，第一个参数：层数（长按触发）；第二个参数：鼠标按键（短按触发）
-
         ht_left_click_nav: ht_left_click_nav {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;       // 需要 2 个参数（hold 层 + tap 键）
@@ -90,40 +42,6 @@
             bindings = <&mo>, <&kp>;
         };
 
-        td_bs: td_bs {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <170>;
-            bindings = <&mo_kp 1 BACKSPACE>, <&kp BACKSPACE>;
-
-            // hold, tap, double_tap
-        };
-
-        httl: ht_two_layers {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&to>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <125>;
-        };
-
-        td_layers: td_layer_swap {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&to 0>, <&to 4>;
-
-            // tap, double_tap
-        };
-
-        td_clk_scrl: td_click_or_scroll {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&mkp RCLK>, <&mo 0>;
-
-            // tap/hold, double_tap
-        };
 
         td_bore: BASE_or_EXTRA {
             compatible = "zmk,behavior-tap-dance";
