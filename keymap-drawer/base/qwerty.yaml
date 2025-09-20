@@ -213,8 +213,8 @@ layers:
   EXTRAS:
   - ZMK Studio
   - ''
-  - LGTM
-  - GIT COMMIT
+  - ''
+  - ''
   - ''
   - BRIGHT ▲
   - {t: BT, h: '0'}
@@ -224,7 +224,7 @@ layers:
   - OUT TOG
   - BT CLR
   - SLEEP
-  - sudo!!
+  - ''
   - ''
   - ''
   - ''
@@ -241,7 +241,7 @@ layers:
   - COPY
   - PASTE
   - ''
-  - NEW DIR
+  - ''
   - MUTE
   - VOLUME DOWN
   - VOLUME UP
