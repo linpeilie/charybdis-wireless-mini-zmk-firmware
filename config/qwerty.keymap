@@ -20,7 +20,7 @@
             // 移除 hold-trigger-on-release（长按立即触发）
             // 移除 hold-trigger-key-positions（避免误判）
 
-            bindings = <&mo 2>, <&mkp LCLK>;
+            bindings = <&mo>, <&mkp>;
 
             // 长按切换到层 3，短按发送左箭头
         };
@@ -30,7 +30,7 @@
             #binding-cells = <2>;   // 两个参数（层 + 按键）
             flavor = "tap-preferred";   // 优先触发（短按）
             tapping-term-ms = <170>;    // 长按判定时间 200ms
-            bindings = <&mo 3>, <&kp BACKSPACE>;
+            bindings = <&mo>, <&kp>;
         };
 
         mo_kp: mo_kp {
