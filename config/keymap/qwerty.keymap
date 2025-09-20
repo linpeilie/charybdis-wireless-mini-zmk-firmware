@@ -108,7 +108,7 @@
         ht_left_mo_kp: ht_left_mo_kp {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;   // 两个参数（层 + 按键）
-            flavor = "tap-perferred";   // 优先触发（短按）
+            flavor = "tap-preferred";   // 优先触发（短按）
             tapping-term-ms = <170>;    // 长按判定时间 200ms
             bindings = <&mo 3>, <&kp BACKSPACE>;
         };
