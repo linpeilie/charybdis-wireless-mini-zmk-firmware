@@ -10,18 +10,6 @@
 
 / {
     behaviors {
-        ht_num_func: homerow_mod {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <175>; // triggers the hold behavior when the tapping-term-ms has expired
-            quick-tap-ms = <150>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
-            require-prior-idle-ms = <185>; // like quick-tap-ms however it will apply for any non-modifier key pressed before it
-            bindings = <&kp>, <&kp>;
-
-            // hold, tap
-        };
-
         // Left-hand HRM
 
         ht_left: left_side_homerow_mod {
@@ -80,7 +68,7 @@
             // 移除 hold-trigger-on-release（长按立即触发）
             // 移除 hold-trigger-key-positions（避免误判）
 
-            bindings = <&mo 2>, <&mkp LCLK>;
+            bindings = <&mo 2 &mkp LCLK>;
 
             // 长按切换到层 3，短按发送左箭头
         };
