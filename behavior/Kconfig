@@ -1,0 +1,9 @@
+menu "Charybdis Trackball Acceleration"
+
+config ZMK_BEHAVIOR_TRACKBALL_ACCEL
+    bool "Enable trackball acceleration behavior"
+    default y
+    help
+        Enables dynamic pointer speed adjustment for trackball input.
+
+endmenu

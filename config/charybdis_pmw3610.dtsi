@@ -79,4 +79,21 @@
         status = "disabled"; // overridden on central
         device = <&trackball_split>;
     };
+
+    behaviors {
+        accel_behavior: accel_behavior {
+                compatible = "zmk,behavior-trackball-accel";
+                accel-threshold = <3>;
+                accel-factor = <1.4>;
+                gain = <1.0>;
+            };
+        };
+
+        // 将行为与 trackball 输入设备绑定
+        trackball_accel_link {
+            compatible = "zmk,input-listener";
+            device = <&trackball>;
+            behavior = <&accel_behavior>;
+            status = "okay";
+        };
 };
