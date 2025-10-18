@@ -6,8 +6,8 @@ manifest:
     - name: 280Zo
       url-base: https://github.com/280Zo
 
-    - name: oleksandrmaslov
-      url-base: https://github.com/oleksandrmaslov
+    - name: linpeilie
+      url-base: https://github.com/linpeilie
 
   projects:
     - name: zmk
@@ -15,7 +15,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-pointing-acceleration
-      remote: oleksandrmaslov
+      remote: linpeilie
       revision: main
     - name: zmk-pmw3610-driver
       remote: 280Zo
