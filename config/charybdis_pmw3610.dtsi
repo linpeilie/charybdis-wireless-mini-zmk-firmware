@@ -80,7 +80,7 @@
         device = <&trackball_split>;
     };
 
-    &pointer_accel {
+    pointer_accel: pointer_accel {
         input-type = <INPUT_EV_REL>;
         codes = <INPUT_REL_X INPUT_REL_Y>;
         sensitivity = <1200>;         // 1.2x base sensitivity
