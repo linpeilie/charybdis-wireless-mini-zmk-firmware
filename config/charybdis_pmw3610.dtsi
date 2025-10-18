@@ -84,9 +84,13 @@
         input-type = <INPUT_EV_REL>;
         codes = <INPUT_REL_X INPUT_REL_Y>; // X and Y axis events
 
+        /* ------------- Office Preset ------------- */
+        /* Lower base sensitivity, very gentle acceleration */
+        /* Prioritizes slow and precise pointer movement   */
+
         sensitivity           = <1000>;
 
-        min-factor            = <1000>;
+        min-factor            = <800>;
         max-factor            = <2000>;
 
         speed-threshold       = <300>;
@@ -94,6 +98,7 @@
 
         y-boost               = <1300>;
         acceleration-exponent = <2>;
+
         sensor-dpi            = <800>;
     };
 
