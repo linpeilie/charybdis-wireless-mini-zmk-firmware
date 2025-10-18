@@ -55,7 +55,7 @@ layers:
   - F9
   - F10
   - F11
-  - {t: ▽, type: trans}
+  - LEFT SHIFT
   - '1'
   - '2'
   - '3'
@@ -77,7 +77,7 @@ layers:
   - ']'
   - <
   - '>'
-  - ''
+  - '-'
   - {t: ▽, type: trans}
   - {type: held}
   - ''
