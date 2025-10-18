@@ -1,23 +1,20 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include <behaviors/input_gestures_accel.dtsi>
+
+&pointer_accel {
+    input-type = <INPUT_EV_REL>;  // For relative input devices
+    track-remainders;             // Accumulate fractional movements
+    min-factor = <800>;          // 0.8x at very slow speeds
+    max-factor = <3000>;         // 3.0x at fast speeds
+    speed-threshold = <1200>;     // 1200 counts/sec for 1x
+    speed-max = <6000>;          // 6000 counts/sec for max accel
+    acceleration-exponent = <2>;  // Quadratic acceleration curve
+};
 
 &trackball_listener {
-    /* base processor chain on all layers */
-    input-processors = <&zip_xy_scaler 5 5>;
-
-    /* layer-8 scroll override */
-    scroller: scroller {
-        layers           = <7>;
-        input-processors = <
-            &zip_xy_scaler 1 15                              // Scales the scroll speed
-            &zip_xy_to_scroll_mapper                         // Converts XY movement to scroll events
-            &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) // Inverts the scroll direction
-        >;
-    };
-
-    /* layer-7 slow-pointer override */
-    slow_pointer: slow_pointer {
-        layers           = <6>;
-        input-processors = <&zip_xy_scaler 2 6>;
-    };
+    input-processors = <
+        &pointer_accel      // Acceleration processor
+        &zip_xy_transform
+    >;
 };
