@@ -1,5 +1,6 @@
 #include "charybdis.dtsi"
 #include "charybdis_pmw3610.dtsi"
+#include "charybdis_pointer.dtsi"
 
 #include <input/processors.dtsi>
 #include <behaviors/input_gestures_accel.dtsi>
@@ -38,8 +39,4 @@
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
-    input-processors = <
-        &pointer_accel
-        &zip_xy_transform
-    >;
 };
