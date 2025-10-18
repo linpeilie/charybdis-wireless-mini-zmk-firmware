@@ -1,6 +1,5 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include "trackball_accel.c" // 引入加速处理器实现
 
 &trackball_listener {
     /* base processor chain on all layers */
