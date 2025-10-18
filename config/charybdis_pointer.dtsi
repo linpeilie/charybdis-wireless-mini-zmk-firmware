@@ -4,7 +4,6 @@
 
 &trackball_listener {
     input-processors = <
-        &pointer_accel      // Acceleration processor
-        &zip_xy_transform
+        &pointer_accel
     >;
 };
