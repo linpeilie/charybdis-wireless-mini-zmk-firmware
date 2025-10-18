@@ -38,4 +38,8 @@
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
+    input-processors = <
+        &pointer_accel
+        &zip_xy_transform
+    >;
 };
