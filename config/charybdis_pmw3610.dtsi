@@ -94,7 +94,7 @@
         speed-threshold       = <400>;   /* Acceleration starts at 400 cnt/s */
         speed-max             = <2500>;  /* Reaches max-factor at 2500 cnt/s */
         y-boost               = <1000>;  /* Same multiplier for X and Y axes */
-        acceleration-exponent = <1>;     /* Linear (no exponential curve) */
+        acceleration-exponent = <2>;     /* Linear (no exponential curve) */
         sensor-dpi            = <800>;   /* Assumes 800 DPI sensor */
     };
 
