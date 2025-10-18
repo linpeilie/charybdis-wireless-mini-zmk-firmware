@@ -44,12 +44,14 @@
         status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
-        spi-max-frequency = <2000000>;
+        spi-max-frequency = <4000000>; // 增加到 4 MHz 以提高通信速度
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <480>;
+        cpi = <960>; // 提高到 960 CPI 以增加灵敏度
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
+
+        input-processors = <&trackball_accel>; // 新增：加速处理器声明
 
         force-awake;
         /* keep the sensor awake while ZMK activity state is ACTIVE,
