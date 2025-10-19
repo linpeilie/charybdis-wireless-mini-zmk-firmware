@@ -93,10 +93,10 @@
 
         BASE {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E                 &kp R  &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P      &kp GRAVE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D                 &kp F  &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C                 &kp V  &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_ALT
-                                &ht_left_mo_kp 2 ESC  &mo 1  &kp SPACE    &kp ENTER  &kp BACKSPACE
+&kp TAB           &kp Q  &kp W  &kp E                 &kp R      &kp T    &kp Y          &kp U      &kp I      &kp O    &kp P      &kp GRAVE
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D                 &kp F      &kp G    &kp H          &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C                 &kp V      &kp B    &kp N          &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_ALT
+                                &ht_left_mo_kp 2 ESC  &kp SPACE  &mo 1    &kp BACKSPACE  &kp ENTER
             >;
         };
 
@@ -105,7 +105,7 @@
 &trans          &kp F1        &kp F2        &kp F3          &kp F4           &kp F5          &kp F6            &kp F7             &kp F8         &kp F9            &kp F10       &kp F11
 &kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0  &kp F12
 &trans          &kp EQUAL     &kp PLUS      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS     &trans
-                                            &none           &none            &trans          &kp ENTER         &trans
+                                            &none           &none            &none           &trans            &trans
             >;
         };
 
@@ -114,7 +114,7 @@
 &trans  &none  &mkp MB4        &msc SCRL_UP    &mkp MB5         &none    &kp PAGE_UP  &kp HOME        &kp UP    &kp END        &kp PAGE_DOWN  &none
 &trans  &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none    &none        &kp LEFT_ARROW  &kp DOWN  &kp RIGHT      &none          &none
 &trans  &none  &mkp LCLK       &mkp MCLK       &mkp RCLK        &none    &none        &kp PAGE_UP     &none     &kp PAGE_DOWN  &none          &trans
-                               &none           &none            &none    &none        &kp DELETE
+                               &none           &none            &none    &kp DELETE   &trans
             >;
         };
 
