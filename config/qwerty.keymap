@@ -113,7 +113,7 @@
             bindings = <
 &trans  &none  &mkp MB4        &msc SCRL_UP    &mkp MB5         &none    &kp PAGE_UP  &kp HOME        &kp UP    &kp END        &kp PAGE_DOWN  &none
 &trans  &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none    &none        &kp LEFT_ARROW  &kp DOWN  &kp RIGHT      &none          &none
-&trans  &none  &mkp LCLK       &mkp MCLK       &mkp RCLK        &none    &none        &kp PAGE_UP     &none     &kp PAGE_DOWN  &none          &none
+&trans  &none  &mkp LCLK       &mkp MCLK       &mkp RCLK        &none    &none        &kp PAGE_UP     &none     &kp PAGE_DOWN  &none          &trans
                                &none           &none            &none    &none        &kp DELETE
             >;
         };
