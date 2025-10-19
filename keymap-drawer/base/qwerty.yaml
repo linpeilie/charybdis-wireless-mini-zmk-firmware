@@ -37,11 +37,11 @@ layers:
   - .
   - /
   - RIGHT ALT
-  - {t: ESC, h: NUM}
-  - {t: L CLK, h: NAV}
-  - {t: BACK SPACE, h: SYM}
-  - ENTER
+  - {t: ESC, h: NAV}
+  - NUM
   - SPACE
+  - ENTER
+  - DELETE
   NUM:
   - {t: ▽, type: trans}
   - F1
@@ -72,15 +72,15 @@ layers:
   - \
   - '{'
   - '}'
-  - ''
+  - '|'
   - '['
   - ']'
   - <
   - '>'
   - '-'
   - {t: ▽, type: trans}
-  - {type: held}
   - ''
+  - {type: held}
   - {t: ▽, type: trans}
   - ENTER
   - SPACE
@@ -121,8 +121,8 @@ layers:
   - PAGE DOWN
   - ''
   - ''
-  - ''
   - {type: held}
+  - ''
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -151,7 +151,7 @@ layers:
   - NEXT
   - ''
   - ''
-  - LOCK
+  - Gui+ L
   - ''
   - ''
   - ''
@@ -165,7 +165,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   GAME_Deprecated:
@@ -342,9 +342,5 @@ combos:
   l: [BASE]
 - p: [38, 39]
   k: L_BASE L_EXTRA
-- p: [26, 25]
-  k: L CLK
-- p: [26, 27]
-  k: Mid CLK
-- p: [27, 28]
-  k: R CLK
+- p: [36, 37]
+  k: {t: SYM, h: toggle}
