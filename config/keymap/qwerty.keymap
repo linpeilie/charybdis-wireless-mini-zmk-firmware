@@ -63,19 +63,9 @@
             key-positions = <38 39>;
         };
 
-        combo_left_click {
-            bindings = <&mkp LCLK>;
-            key-positions = <26 25>;
-        };
-
-        combo_middle_click {
-            bindings = <&mkp MCLK>;
-            key-positions = <26 27>;
-        };
-
-        combo_right_click {
-            bindings = <&mkp RCLK>;
-            key-positions = <27 28>;
+        togle_layer_sys {
+            bindings = <&tog 3>;
+            key-positions = <36 37>;
         };
     };
 
@@ -103,10 +93,10 @@
 
         BASE {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E                 &kp R                      &kp T                         &kp Y      &kp U      &kp I      &kp O    &kp P      &kp GRAVE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D                 &kp F                      &kp G                         &kp H      &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C                 &kp V                      &kp B                         &kp N      &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_ALT
-                                &ht_left_mo_kp 1 ESC  &ht_left_click_nav 2 LCLK  &ht_left_mo_kp 3 BACKSPACE    &kp ENTER  &kp SPACE
+&kp TAB           &kp Q  &kp W  &kp E                 &kp R  &kp T        &kp Y      &kp U       &kp I      &kp O    &kp P      &kp GRAVE
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D                 &kp F  &kp G        &kp H      &kp J       &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C                 &kp V  &kp B        &kp N      &kp M       &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_ALT
+                                &ht_left_mo_kp 2 ESC  &mo 1  &kp SPACE    &kp ENTER  &kp DELETE
             >;
         };
 
@@ -114,7 +104,7 @@
             bindings = <
 &trans          &kp F1        &kp F2                &kp F3          &kp F4           &kp F5          &kp F6            &kp F7             &kp F8         &kp F9            &kp F10       &kp F11
 &kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3    &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0  &kp F12
-&trans          &kp EQUAL     &kp NON_US_BACKSLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS     &trans
+&trans          &kp EQUAL     &kp NON_US_BACKSLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS     &trans
                                                     &none           &none            &trans          &kp ENTER         &kp SPACE
             >;
         };
@@ -132,7 +122,7 @@
             bindings = <
 &studio_unlock  &none  &none  &none  &none   &none     &none   &none       &none             &none       &none  &none
 &none           &none  &none  &none  &none   &none     &none   &kp C_PREV  &kp K_PLAY_PAUSE  &kp C_NEXT  &none  &none
-&kp K_LOCK      &none  &none  &none  &none   &none     &none   &none       &none             &none       &none  &none
+&kp LG(L)       &none  &none  &none  &none   &none     &none   &none       &none             &none       &none  &none
                               &none  &trans  &trans    &trans  &trans
             >;
         };
