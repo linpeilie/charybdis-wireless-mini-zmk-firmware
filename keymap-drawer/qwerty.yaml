@@ -38,10 +38,10 @@ layers:
   - /
   - RIGHT ALT
   - {t: ESC, h: NAV}
-  - NUM
   - SPACE
+  - NUM
+  - BACK SPACE
   - ENTER
-  - DELETE
   NUM:
   - {t: ▽, type: trans}
   - F1
@@ -69,7 +69,7 @@ layers:
   - F12
   - {t: ▽, type: trans}
   - '='
-  - \
+  - +
   - '{'
   - '}'
   - '|'
@@ -80,10 +80,10 @@ layers:
   - '-'
   - {t: ▽, type: trans}
   - ''
+  - ''
   - {type: held}
   - {t: ▽, type: trans}
-  - ENTER
-  - SPACE
+  - {t: ▽, type: trans}
   NAV:
   - {t: ▽, type: trans}
   - ''
@@ -120,11 +120,11 @@ layers:
   - ''
   - PAGE DOWN
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - {type: held}
   - ''
   - ''
-  - ''
+  - DELETE
   - {t: ▽, type: trans}
   SYM:
   - ZMK Studio
