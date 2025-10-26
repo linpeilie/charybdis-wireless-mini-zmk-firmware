@@ -101,7 +101,7 @@ layers:
   - ''
   - L CLK
   - '&msc SCRL_DOWN'
-  - '&msc SCRL_RIGHT'
+  - R CLK
   - ''
   - ''
   - LEFT
@@ -113,7 +113,7 @@ layers:
   - ''
   - '&msc SCRL_LEFT'
   - Mid CLK
-  - R CLK
+  - '&msc SCRL_RIGHT'
   - ''
   - ''
   - PAGE UP
