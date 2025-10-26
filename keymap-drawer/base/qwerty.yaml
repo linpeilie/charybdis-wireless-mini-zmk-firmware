@@ -99,7 +99,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - ''
-  - '&msc SCRL_LEFT'
+  - L CLK
   - '&msc SCRL_DOWN'
   - '&msc SCRL_RIGHT'
   - ''
@@ -108,10 +108,10 @@ layers:
   - DOWN
   - RIGHT
   - ''
-  - ''
+  - INSERT
   - {t: ▽, type: trans}
   - ''
-  - L CLK
+  - '&msc SCRL_LEFT'
   - Mid CLK
   - R CLK
   - ''
@@ -163,8 +163,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -343,4 +343,4 @@ combos:
 - p: [38, 39]
   k: L_BASE L_EXTRA
 - p: [36, 37]
-  k: {t: SYM, h: toggle}
+  k: SYM
